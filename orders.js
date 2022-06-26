@@ -5,7 +5,6 @@
     In this file, you'll be writing a class
     to make tickets from order information.
 */
-done
 
 //////////////////PROBLEM 1////////////////////
 /*  

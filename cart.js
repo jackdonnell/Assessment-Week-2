@@ -6,7 +6,6 @@
     calculate order totals. You'll also be 
     creating customer objects.  
 */
-not done
 
 //////////////////PROBLEM 1////////////////////
 /*  
@@ -35,8 +34,9 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const summedPrice = cart.reduce((a, c) => a + c.price, 0)
 
+console.log(summedPrice)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -55,7 +55,9 @@ const cart = [
 
 //CODE HERE
 
+const calcFinalPrice = (cartTotal, couponValue, tax) => cartTotal * (tax +1) - couponValue
 
+console.log(calcFinalPrice(100, 10, .05))
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -79,7 +81,7 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
-
+The customer object will include the information relevant for delivering an ordr to a customer. im assuming this is an online order to someones house so we will need the customers address, phone number, name, order description and price. 
 */
 
 /*
@@ -88,3 +90,11 @@ const cart = [
 */
 
 //CODE HERE
+
+let customerInfo = {
+    name: 'Jack Donnell',
+    phoneNumber: 660809653450,
+    address: '488/18 Phetchaburi 18 alley, Thanonphetchburi, Bangkok',
+    orderDesc: 'extra large bacon pizza',
+    price: 30
+}

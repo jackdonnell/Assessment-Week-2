@@ -6,7 +6,6 @@
     helps with some functionality on the home 
     page of the restaurant's website.
 */
-// almost done
 
 //////////////////PROBLEM 1////////////////////
 /* 
@@ -23,9 +22,9 @@
 
 //CODE HERE
 
-// const greetUser = (username) => `Welcome back, ${username}`
+const greetUser = (username) => `Welcome back, ${username}`
 
-// console.log(greetUser('Jack'))
+console.log(greetUser('Jack'))
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -51,16 +50,16 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
 
-// const canWeDeliver = (zipCode) => {
-//     for (let i = 0; i < deliveryAreaZipCodes.length; i++){
-//         if (zipCode === deliveryAreaZipCodes[i]) {
-//         return "You're in our delivery zone!"
-//         }
-//     }
-//     return `Sorry, we can't deliver to that address`
-// }
+const canWeDeliver = (zipCode) => {
+    for (let i = 0; i < deliveryAreaZipCodes.length; i++){
+        if (zipCode === deliveryAreaZipCodes[i]) {
+        return "You're in our delivery zone!"
+        }
+    }
+    return `Sorry, we can't deliver to that address`
+}
 
-// console.log(canWeDeliver(85214))
+console.log(canWeDeliver(85214))
 
 /* 
     Problem 2 Continued
@@ -81,14 +80,14 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 // CODE HERE
 
-// const canWeDeliver = (zipCode) => {
-//     if (deliveryAreaZipCodes.includes(zipCode)){
-//         return "You're in our delivery zone!"
-//     } else {
-//         return "Sorry, we can't deliver to that address"
-//     }
-// }
-// console.log(canWeDeliver(85206))
+const canWeDeliver = (zipCode) => {
+    if (deliveryAreaZipCodes.includes(zipCode)){
+        return "You're in our delivery zone!"
+    } else {
+        return "Sorry, we can't deliver to that address"
+    }
+}
+console.log(canWeDeliver(85206))
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -113,11 +112,7 @@ const deals = [
         desc: '   This deal lasts until the end of March! '
     }
 ]
-// let {discount} = deals[0].title
-(deals[0].title).replaces(15, 10)
-// console.log(deals[0].title)
-// console.log(discount.replace(15, 10))
-// console.log(deals[0].title)
+
 /*
     The owner has decided to take the 15% off
     deal down to 10%.
@@ -129,7 +124,9 @@ const deals = [
 
 //CODE HERE
 
+deals[0].title = deals[0].title.replace('15', '10')
 
+console.log(deals[0].title)
 
 /*
     The restaurant is going to continue its
@@ -145,3 +142,7 @@ const deals = [
 */
 
 //CODE HERE
+
+deals[1].desc = deals[1].desc.replace('March', 'April').trim()
+
+console.log(deals[1].desc)

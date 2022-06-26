@@ -6,7 +6,6 @@
     deals with food objects, arrays of objects
     and filtering those arrays. 
 */
-almost done
 
 //////////////////PROBLEM 1////////////////////
 /*  
@@ -135,7 +134,7 @@ let foodArr = [
         category : 'Mains',
         popularity : 6,
         rating : 8,
-        tags : ['Wild Caught'],
+        tags : ['Ethically Sourced'],
     },
     {
         name : 'Crab Cakes',
@@ -143,7 +142,7 @@ let foodArr = [
         category : 'Sides',
         popularity : 6,
         rating : 7,
-        tags : ['Fresh Caught'],
+        tags : ['Ethically Sourced'],
     }
 
 
@@ -166,8 +165,16 @@ let foodArr = [
 //CODE HERE
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter(function(element){
+    for (let i = 0; i > foodArr.length; i++){
+    if (foodArr.tags.includes(element)) {
+        return foodArr[i]
+    }
+    }
+}
+)
 
-
+console.log(filteredFood)
 
 //////////////////PROBLEM 5////////////////////
 /* 
@@ -207,9 +214,10 @@ let foodArr = [
     
     Return the filtered array from the entire function
 */
-
 //CODE HERE
-
+const filteredByProperty = (property, number, price) => {
+    return  
+}
 
 /*
     Invoke the `filterByProperty` function passing
