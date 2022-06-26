@@ -6,7 +6,7 @@
     calculate order totals. You'll also be 
     creating customer objects.  
 */
-
+not done
 
 //////////////////PROBLEM 1////////////////////
 /*  

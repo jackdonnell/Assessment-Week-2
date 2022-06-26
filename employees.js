@@ -5,7 +5,7 @@
     In this file, you'll be writing classes to 
     store information about restaurant employees.
 */
-
+not done
 //////////////////PROBLEM 1////////////////////
 /*  
     Create a new class called `Employee`.

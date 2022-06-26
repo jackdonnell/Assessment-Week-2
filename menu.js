@@ -6,7 +6,7 @@
     deals with food objects, arrays of objects
     and filtering those arrays. 
 */
-
+almost done
 
 //////////////////PROBLEM 1////////////////////
 /*  
@@ -32,6 +32,14 @@
 
 //CODE HERE
 
+const pizza = {
+    name : 'Jack',
+    price : 14,
+    category : 'Mains',
+    popularity : 8,
+    rating : 9,
+    tags : ['Vegetarian', 'Vegan'],
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -44,6 +52,7 @@
 
 //CODE HERE
 
+console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -54,6 +63,7 @@
 
 //CODE HERE
 
+console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -64,7 +74,9 @@
 
 //CODE HERE
 
+let {price} = pizza
 
+console.log(price)
 /*
     Fourth, and last, destructure the category
     property.
@@ -74,6 +86,9 @@
 
 //CODE HERE
 
+let {category} = pizza
+
+console.log(category)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -88,6 +103,51 @@
 */
 
 //CODE HERE
+
+let foodArr = [
+    {
+        name : 'Pizza',
+        price : 25,
+        category : 'Mains',
+        popularity : 8,
+        rating : 9,
+        tags : ['Gluten Free'],
+    }, 
+    {
+         name : 'Spaghetti',
+        price : 20,
+        category : 'Mains',
+        popularity : 7,
+        rating : 7,
+        tags : ['Vegetarian'],
+    },
+    {
+        name : 'Garlic Bread',
+        price : 8,
+        category : 'Sides',
+        popularity : 5,
+        rating : 10,
+        tags : ['Vegetarian', 'Vegan'],
+    },
+    {
+        name : 'Shrimp',
+        price : 27,
+        category : 'Mains',
+        popularity : 6,
+        rating : 8,
+        tags : ['Wild Caught'],
+    },
+    {
+        name : 'Crab Cakes',
+        price : 14,
+        category : 'Sides',
+        popularity : 6,
+        rating : 7,
+        tags : ['Fresh Caught'],
+    }
+
+
+]
 
 
 

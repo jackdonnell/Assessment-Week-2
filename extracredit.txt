@@ -1,0 +1,10 @@
+I spent way too much time trying to figure out why every single website would have different results for the tech stacks of these companies and I still couldn't reach a conclusion. 
+
+Facebook's tech stack includes:
+Javascript, React, PHP, GraphQL, Memcached, Cassandra, Flux, Presto, Tornado, Relay Framework, Hack, RocksDB, Prepack, McRouter, Beringei, Yoga and Hydra Framework
+
+Google uses:
+Python, Java, Android SDK, Go, C++, Preact, Kubernetes, TensorFlow, Javascript, AngularJS, Golang, Dart, Material Design Lite, Material Design, guava, Preact and LevelDB
+
+and Shopify uses:
+Javascript, Python, React, NGINX, MySQL, PHP, Redis, Ruby, React Native, GraphQL, Kafka, Rails, Golang, Memcached, Apache Spark, OpenResty, Hadoop, Lua, Unicorn, dbt and Apache Beam
