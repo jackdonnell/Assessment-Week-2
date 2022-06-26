@@ -165,14 +165,16 @@ let foodArr = [
 //CODE HERE
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+// const filteredfood = foodArr.filter(cb(element ))
 const filteredFood = foodArr.filter(function(element){
-    for (let i = 0; i > foodArr.length; i++){
-    if (foodArr.tags.includes(element)) {
+    for (let i = 0; i < foodArr.length; i++){
+    if (foodArr.tags === (element)) {
         return foodArr[i]
     }
     }
 }
 )
+
 
 console.log(filteredFood)
 

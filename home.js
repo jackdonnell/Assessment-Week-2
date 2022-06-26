@@ -80,14 +80,14 @@ console.log(canWeDeliver(85214))
 
 // CODE HERE
 
-const canWeDeliver = (zipCode) => {
+const canWeDeliver2 = (zipCode) => {
     if (deliveryAreaZipCodes.includes(zipCode)){
         return "You're in our delivery zone!"
     } else {
         return "Sorry, we can't deliver to that address"
     }
 }
-console.log(canWeDeliver(85206))
+console.log(canWeDeliver2(85206))
 
 //////////////////PROBLEM 3////////////////////
 /* 
