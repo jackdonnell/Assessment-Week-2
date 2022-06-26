@@ -1,4 +1,4 @@
-I spent way too much time trying to figure out why every single website would have different results for the tech stacks of these companies and I still couldn't reach a conclusion. 
+I spent way too much time trying to figure out why every single resource would have different results for the tech stack these companies use and I still don't understand why but here's a conglomeration of everything I found.
 
 Facebook's tech stack includes:
 Javascript, React, PHP, GraphQL, Memcached, Cassandra, Flux, Presto, Tornado, Relay Framework, Hack, RocksDB, Prepack, McRouter, Beringei, Yoga and Hydra Framework

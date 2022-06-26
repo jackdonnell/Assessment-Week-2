@@ -5,7 +5,7 @@
     In this file, you'll be writing classes to 
     store information about restaurant employees.
 */
-not done
+
 //////////////////PROBLEM 1////////////////////
 /*  
     Create a new class called `Employee`.
@@ -20,7 +20,17 @@ not done
 */
 
 //CODE HERE
+let empArr = []
 
+class Employee {
+    constructor (name, shifts){
+        this.name = name;
+        this.shifts = shifts;
+    }
+    getSchedule() {
+    console.log(`${this.name} works on ${this.shifts}`)
+    }
+}
 
 
 /*
@@ -35,6 +45,8 @@ not done
 
 //CODE HERE
 
+let empOne = new Employee ('Jess', 'weekday mornings, weekday afternoons')
+
 /*
     Call the `getSchedule` method on the
     `empOne` object.
@@ -42,6 +54,7 @@ not done
 
 //CODE HERE
 
+empOne.getSchedule()
 
 /*
     Make a copy of the empOne object
@@ -57,7 +70,11 @@ not done
 
 //CODE HERE
 
+let empTwo = { ...empOne }
 
+empTwo.name = 'Nick'
+
+console.log(empTwo.name)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -85,6 +102,19 @@ not done
 //CODE HERE
 
 
+class Manager extends Employee {
+    constructor(name, shifts, employees){
+        super(name, shifts)
+        this.employees = []
+    }
+    getEmployees() {
+        console.log(`${this.name} manages ${this.employees}`)
+    }
+    addEmployee(emp) {
+    this.employees.push(emp)
+    }
+}
+
 
 /*
     Create a new instance of your class.
@@ -99,6 +129,7 @@ not done
 
 //CODE HERE
 
+let manager = new Manager ('Winston', 'weekday mornings, weekday afternoons', 'Cece and Schmidt')
 
 /*
     Call the `getEmployees` method on the
@@ -106,6 +137,8 @@ not done
 */
 
 //CODE HERE
+
+manager.getEmployees()
 
 /*
     Call the `addEmployee` method on the 
@@ -115,6 +148,8 @@ not done
 
 //CODE HERE 
 
+manager.addEmployee('Coach')
+
 /*
     Call the `getEmployees` method on the
     `manager` object again to confirm 
@@ -122,3 +157,5 @@ not done
 */
 
 //CODE HERE
+
+manager.getEmployees()
